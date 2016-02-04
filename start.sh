@@ -9,5 +9,5 @@ handle_signal() {
 trap "handle_signal" SIGINT SIGTERM SIGHUP
 
 echo "starting sonarr"
-mono /NzbDrone/NzbDrone.exe --no-browser -data=/config/nzbdrone & wait
+mono /NzbDrone/NzbDrone.exe --no-browser -data=/config & wait
 echo "stopping sonarr"
